@@ -1,0 +1,41 @@
+.header{
+  box-sizing: border-box;
+  width: 100%;
+  max-width: $desktop;
+  padding: 60px 160px;
+  background-color: $main-background-color;
+  @include screen-settings($tablet){
+    padding: 60px;
+  }
+  @include screen-settings($mobile){
+    padding: 24px 20px;
+  }
+
+/*Главный заголовок. Сервис, который оказывает компания*/
+  &__company-main-service{
+    @include default-settings;
+    @include font-settings(112px, 1.0, $headers-color);
+    margin-top: 60px;
+    @include screen-settings($tablet){
+      @include font-settings(70px, 1.29, $headers-color);
+    }
+    @include screen-settings($mobile){
+      @include font-settings(50px, 1.20, $headers-color);
+    }
+  }
+
+/*Главный заголовок. Сервис, который оказывает компания*/
+  &__company-main-service-object{
+    @include default-settings;
+    @include font-settings(80px, .88, $headers-color);
+    margin-top: 20px;
+    @include screen-settings($tablet){
+      @include font-settings(50px, 1.20, $headers-color);
+      margin-top: 0;
+    }
+    @include screen-settings($mobile){
+      @include font-settings(30px, 1.27, $headers-color);
+      margin-top: 10px;
+    }
+  }
+}

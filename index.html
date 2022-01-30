@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="author" content="Юрий Дятлов">
     <title>C-Works</title>
+    <link rel="stylesheet" href="./pages/index.css">
 </head>
 <body class="page">
     <header class="header">
@@ -22,18 +23,26 @@
             Плёночных фотоаппаратов
         </p>
         <form action="" class="form-contact-us">
-            <fieldset class="form-contact-us__customer-information">
-                <textarea name="" id="" cols="30" rows="10"
-                          class="form-contact-us__customer-information-text">
-
-                </textarea>
-                <label for="" class="form-contact-us__customer-information-message">
-
-                </label>
+            <fieldset class="form-contact-us__group-of-elements">
+                <input class="form-contact-us__customer-information"
+                       name="form-contact-us__customer-information"
+                       id="form-contact-us__customer-information"
+                       type="text">
+                <button class="form-contact-us__submit-button"
+                        name="form-contact-us__submit-button"
+                        type="submit">
+                    <span class="form-contact-us__submit-button-value">
+                        Отремонтируйте камеру
+                    </span>
+                    <span class="form-contact-us__submit-button-emodzi">
+                        &#9996
+                    </span>
+                </button>
             </fieldset>
-            <button class="form_submit-button">
-
-            </button>
+            <label for="form-contact-us__customer-information"
+                   class="form-contact-us__input-lable">
+                Напишите нам и&nbsp;мы&nbsp;свяжемся с&nbsp;вами.
+            </label>
         </form>
     </header>
     <main class="content">

@@ -10,7 +10,7 @@
 
 /*Настройка  ширины экрана*/
 @mixin screen-settings ($screen-width){
-  @media screen and (min-width: $screen-width){
+  @media screen and (max-width: $screen-width){
     @content;
   }
 }
@@ -19,4 +19,5 @@
 @mixin default-settings {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }

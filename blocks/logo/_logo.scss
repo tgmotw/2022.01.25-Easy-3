@@ -1,0 +1,22 @@
+.logo{
+  display: flex;
+  align-items: center;
+  &__company-name{
+    @include default-settings;
+    @include font-settings(22px, 1.36, $headers-color);
+    margin-right: 20px;
+    background-color: $main-background-color;
+
+    @include screen-settings($mobile){
+      @include font-settings(20px, 1.40, $headers-color);
+      margin-right: 16px;
+    }
+  }
+  &__company-status{
+    @include default-settings;
+    @include font-settings(12px, 1.0, $highlights-color);
+    padding: 4px 8px;
+    background-color: $highlights-background-color;
+    border-radius: 4px;
+  }
+}

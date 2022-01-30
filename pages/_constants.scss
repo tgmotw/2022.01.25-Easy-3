@@ -1,8 +1,6 @@
 /*Цвета заливки*/
 $main-background-color: #000;
 $highlights-background-color: #25e197;
-$buttons-background-color: #47474c;
-$inputs-background-color: rgba(142, 142, 152, 0.2);
 $items-background-color: #1c1c1e;
 
 /*Цвета шрифтов*/
@@ -13,6 +11,11 @@ $highlights-color: #000;
 
 /*Разрешения экранов*/
 $desktop: 1440px;
-$tablet: 769px;
-$mobile: 320px;
+$tablet: 768px;
+$mobile: 560px;
 
+/*Настройки элементов*/
+$cursor: pointer;
+$buttons-background-color: #47474c;
+$inputs-passive-background-color: rgba(142, 142, 152, 0.2);
+$inputs-active-background-color: rgba(142, 142, 152, 0.3);

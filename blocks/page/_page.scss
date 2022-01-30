@@ -1,0 +1,7 @@
+.page{
+  @include default-settings;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $main-background-color;
+}
