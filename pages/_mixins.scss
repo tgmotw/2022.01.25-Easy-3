@@ -21,3 +21,25 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+/*Сброс стандартных настроек списков*/
+@mixin default-settings-ul {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+@mixin default-settings-li{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+@mixin default-settings-a {
+  display: flex;
+  box-sizing: border-box;
+  text-decoration: none;
+}

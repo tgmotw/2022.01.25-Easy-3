@@ -1,0 +1,80 @@
+.services{
+  box-sizing: border-box;
+  width: 100%;
+  max-width: $desktop;
+  padding: 60px 160px;
+  background-color: $main-background-color;
+  @include screen-settings($tablet){
+    padding: 60px;
+  }
+  @include screen-settings($mobile){
+    padding: 40px 20px;
+  }
+
+  &__list{
+    @include default-settings-ul;
+    justify-content: center;
+    width: 100%;
+    @include screen-settings($tablet){
+      flex-direction: column;
+    }
+  }
+
+
+
+  &__list-item {
+    @include default-settings-li;
+    width: 100%;
+    max-width: 550px;
+    padding: 40px;
+    border-radius: $services-border-radius;
+    background-color: $items-background-color;
+    &:first-child{
+      margin-right: 20px;
+    }
+    @include screen-settings($tablet){
+      &:first-child{
+        margin-right: 0;
+      }
+      &:last-child{
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__service-link{
+    @include default-settings-a;
+    flex-direction: column;
+  }
+
+  &__service-type{
+    @include font-settings(18px, 1.00, $main-text-color);
+  }
+
+  &__service-title{
+    @include font-settings(32px, 1.00, $headers-color);
+    margin-top: 20px;
+    @include screen-settings($mobile){
+      @include font-settings(24px, 1.33, $headers-color);
+      margin-top: 10px;
+    }
+  }
+
+  &__service-description{
+    @include font-settings(32px, 1.25, $main-text-color);
+    margin-top: 40px;
+    @include screen-settings($mobile){
+      @include font-settings(12px, 1.50, $main-text-color);
+      margin-top: 28px;
+    }
+  }
+
+  &__service-price{
+    @include font-settings(32px, 1.25, $highlights-background-color);
+    margin-top: 40px;
+    @include screen-settings($mobile){
+      @include font-settings(12px, 1.50, $highlights-background-color);
+      margin-top: 100px;
+    }
+  }
+}

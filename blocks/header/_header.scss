@@ -5,10 +5,10 @@
   padding: 60px 160px;
   background-color: $main-background-color;
   @include screen-settings($tablet){
-    padding: 60px;
+    padding: 60px 60px 32px 60px;
   }
   @include screen-settings($mobile){
-    padding: 24px 20px;
+    padding: 24px 20px 20px 20px;
   }
 
 /*Главный заголовок. Сервис, который оказывает компания*/
