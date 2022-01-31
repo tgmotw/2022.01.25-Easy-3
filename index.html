@@ -22,7 +22,7 @@
         <p class="header__company-main-service-object">
             Плёночных фотоаппаратов
         </p>
-        <form action="" class="form-contact-us">
+        <form class="form-contact-us">
             <fieldset class="form-contact-us__group-of-elements">
                 <input class="form-contact-us__customer-information"
                        name="form-contact-us__customer-information"
@@ -35,7 +35,7 @@
                         Отремонтируйте камеру
                     </span>
                     <span class="form-contact-us__submit-button-emodzi">
-                        &#9996
+                        &#9996;
                     </span>
                 </button>
             </fieldset>
@@ -46,7 +46,7 @@
         </form>
     </header>
     <main class="content">
-        <section class="group-of-images">
+        <div class="group-of-images">
             <div class="group-of-images__upper-group">
                 <div class="group-of-images__upper-group-photo-container">
                     <img src="./images/group-of-images-upper-group-photo.png"
@@ -63,7 +63,7 @@
                          class="group-of-images__lower-group-photo">
                 </div>
             </div>
-        </section>
+        </div>
         <section class="description">
             <p class="description__main-text">
                 Мы&nbsp;ремонтируем плёночные фотоаппараты.
@@ -126,14 +126,84 @@
                         </span>
                     </a>
                 </li>
+                <li class="warranties__list-item">
+                    <a href="#" class="warranties__warranty-link">
+                        <span class="warranties__warranty-type">
+                            Ремонт
+                        </span>
+                        <span class="warranties__warranty-description">
+                            После ремонта мы&nbsp;даем гарантию на&nbsp;3&nbsp;месяца или 6&nbsp;месяцев.
+                        </span>
+                    </a>
+                </li>
+                <li class="warranties__list-item">
+                    <a href="#" class="warranties__warranty-link">
+                        <span class="warranties__warranty-type">
+                            Пайка и&nbsp;адаптация
+                        </span>
+                        <span class="warranties__warranty-description">
+                            После пайки и&nbsp;адаптации питания мы&nbsp;даем гарантию на&nbsp;1&nbsp;год.
+                        </span>
+                    </a>
+                </li>
+                <li class="warranties__list-item">
+                    <a href="#" class="warranties__warranty-link">
+                        <span class="warranties__warranty-type">
+                            Осмотр
+                        </span>
+                        <span class="warranties__warranty-description">
+                           Осмотр камеры&nbsp;&mdash; бесплатен, если мы&nbsp;что-то сломаем, поменяем деталь сами.
+                        </span>
+                    </a>
+                </li>
             </ul>
         </section>
         <section class="donations">
-
+            <h2 class="donations__title">
+                Поддержите нас 🤝
+            </h2>
+            <button class="donations__button-contact-us"
+                    name="donations__button-contact-us">
+                Напишите нам если хотите помочь!
+            </button>
+            <p class="donations__need-money-message">
+                Ещё вы&nbsp;сможете безвозмездно поддержать нас на&nbsp;Patreon, пока мы&nbsp;ещё создали аккаунт, но&nbsp;как только это сделаем, сообщим вам.
+            </p>
         </section>
     </main>
     <footer class="footer">
-
+        <div class="footer__separator"></div>
+        <div class="logo logo_position_footer">
+            <p class="logo__company-name">
+                C-Works
+            </p>
+            <p class="logo__company-status">
+                мы открылись
+            </p>
+        </div>
+        <form class="form-contact-us form-contact-us_position_footer">
+            <fieldset class="form-contact-us__group-of-elements">
+                <input class="form-contact-us__customer-information"
+                       name="form-contact-us__customer-information"
+                       id="form-contact-us__customer-information-footer"
+                       type="text">
+                <button class="form-contact-us__submit-button"
+                        name="form-contact-us__submit-button"
+                        type="submit">
+                    <span class="form-contact-us__submit-button-value">
+                        Отремонтируйте камеру
+                    </span>
+                    <span class="form-contact-us__submit-button-emodzi">
+                        &#9996;
+                    </span>
+                </button>
+            </fieldset>
+            <label for="form-contact-us__customer-information"
+                   class="form-contact-us__input-lable">
+                Напишите нам и&nbsp;мы&nbsp;свяжемся с&nbsp;вами.
+            </label>
+        </form>
+        <p class="footer__copyright">&copy; C-Works, 2021.</p>
     </footer>
 </body>
 </html>

@@ -1,0 +1,63 @@
+.donations {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: $desktop;
+  padding: 60px 160px;
+  background-color: $main-background-color;
+  @include screen-settings($tablet) {
+    padding: 60px;
+  }
+  @include screen-settings($mobile) {
+    padding: 40px 20px;
+  }
+
+  &__title {
+    @include default-settings;
+    @include font-settings(32px, 1.25, $headers-color);
+    margin-top: 60px;
+    @include screen-settings($tablet){
+      @include font-settings(20px, 1.50, $headers-color);
+    }
+    @include screen-settings($mobile){
+      @include font-settings(12px, 1.50, $headers-color);
+      padding-top: 40px;
+    }
+  }
+
+  &__button-contact-us{
+    @include default-settings;
+    @include font-settings(14px, 1.71, $headers-color);
+    display: flex;
+    align-items: center;
+    border: unset;
+    border-radius: 8px;
+    height: 50px;
+    width: 100%;
+    max-width: 306px;
+    padding: 13px 30px;
+    margin-top: 90px;
+    background-color: $buttons-background-color;
+    cursor: $cursor;
+    @include screen-settings($tablet) {
+      margin-top: 80px;
+    }
+    @include screen-settings($mobile){
+      padding: 16px 30px;
+      margin-top: 50px;
+    }
+  }
+
+  &__need-money-message{
+    @include default-settings;
+    @include font-settings(32px, 1.25, $main-text-color);
+    margin-top: 50px;
+    @include screen-settings($tablet){
+      @include font-settings(20px, 1.5, $main-text-color);
+      margin-top: 40px;
+    }
+    @include screen-settings($mobile){
+      @include font-settings(12px, 1.5, $main-text-color);
+      margin-top: 30px;
+    }
+  }
+}

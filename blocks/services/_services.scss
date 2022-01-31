@@ -13,32 +13,28 @@
 
   &__list{
     @include default-settings-ul;
+    display: grid;
     justify-content: center;
-    width: 100%;
-    @include screen-settings($tablet){
-      flex-direction: column;
+    grid-template-columns: repeat(auto-fit, minmax(400px, max-content));
+    grid-gap: 20px;
+    @include screen-settings($mobile){
+      grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
     }
   }
-
-
 
   &__list-item {
     @include default-settings-li;
     width: 100%;
-    max-width: 550px;
+    max-width: 648px;
     padding: 40px;
     border-radius: $services-border-radius;
     background-color: $items-background-color;
-    &:first-child{
-      margin-right: 20px;
+    &:hover{
+      cursor: $cursor;
+      background-color: $elements-hover-background-color;
     }
     @include screen-settings($tablet){
-      &:first-child{
-        margin-right: 0;
-      }
-      &:last-child{
-        margin-top: 20px;
-      }
+
     }
   }
 

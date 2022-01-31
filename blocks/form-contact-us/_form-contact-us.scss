@@ -88,7 +88,14 @@
   &__input-lable{
     @include default-settings;
     @include font-settings(12px, 1.50, $labels-color);
-    margin-top: 10px;
+    margin-top: 18px;
     padding-left: 10px;
+  }
+
+  &_position_footer{
+    margin-top: 84px;
+    @include screen-settings($mobile){
+      margin-top: 184px;
+    }
   }
 }

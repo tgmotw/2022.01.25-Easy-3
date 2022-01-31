@@ -1,0 +1,40 @@
+.footer {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: $desktop;
+  padding: 60px 160px;
+  background-color: $main-background-color;
+  @include screen-settings($tablet) {
+    padding: 60px;
+    position: static;
+  }
+  @include screen-settings($mobile) {
+    padding: 40px 20px;
+  }
+
+  &__separator{
+    box-sizing: border-box;
+    border:2px solid #151515;
+    margin-top: 180px;
+    @include screen-settings($tablet){
+      margin-top: 150px;
+    }
+  }
+
+  &__copyright{
+    @include default-settings;
+    @include font-settings(12px, 1.50, $labels-color);
+    position: absolute;
+    right: 0;
+    bottom: 60px;
+    @include screen-settings($tablet) {
+      position: static;
+      margin-top: 60px;
+    }
+    @include screen-settings($mobile) {
+      position: static;
+      margin-top: 40px;
+    }
+  }
+}
