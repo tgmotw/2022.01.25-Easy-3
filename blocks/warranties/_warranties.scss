@@ -1,0 +1,68 @@
+.warranties {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: $desktop;
+  padding: 60px 160px;
+  background-color: $main-background-color;
+  @include screen-settings($tablet) {
+    padding: 60px;
+  }
+  @include screen-settings($mobile) {
+    padding: 40px 20px;
+  }
+
+  &__title {
+    @include default-settings;
+    @include font-settings(32px, 1.25, $headers-color);
+    margin-top: 60px;
+    @include screen-settings($tablet){
+      @include font-settings(20px, 1.50, $headers-color);
+    }
+    @include screen-settings($mobile){
+      @include font-settings(12px, 1.50, $headers-color);
+      padding-top: 40px;
+    }
+  }
+
+  &__list {
+    @include default-settings-ul;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(265px, max-content));
+    width: 100%;
+    margin-top: 60px;
+    grid-gap: 20px;
+  }
+
+  &__list-item{
+    @include default-settings-li;
+    height: 153px;
+    padding: 20px;
+    max-width: 314px;
+    border-radius: $warranties-border-radius;
+    background-color: $items-background-color;
+    &:hover {
+      cursor: $cursor;
+      background-color: $elements-hover-background-color;
+    }
+  }
+
+  &__warranty-link{
+    @include default-settings-a;
+    flex-direction: column;
+  }
+
+  &__warranty-type{
+    @include font-settings(18px, 1.00, $headers-color);
+  }
+
+  &__warranty-description{
+    @include font-settings(15px, 1.27, $main-text-color);
+    margin-top: 38px;
+    @include screen-settings($mobile){
+      @include font-settings(12px, 1.50, $main-text-color);
+      margin-top: 36px;
+    }
+  }
+}
+

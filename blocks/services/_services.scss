@@ -1,0 +1,76 @@
+.services{
+  box-sizing: border-box;
+  width: 100%;
+  max-width: $desktop;
+  padding: 60px 160px;
+  background-color: $main-background-color;
+  @include screen-settings($tablet){
+    padding: 60px;
+  }
+  @include screen-settings($mobile){
+    padding: 40px 20px;
+  }
+
+  &__list{
+    @include default-settings-ul;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, max-content));
+    grid-gap: 20px;
+    @include screen-settings($mobile){
+      grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+    }
+  }
+
+  &__list-item {
+    @include default-settings-li;
+    width: 100%;
+    max-width: 648px;
+    padding: 40px;
+    border-radius: $services-border-radius;
+    background-color: $items-background-color;
+    &:hover{
+      cursor: $cursor;
+      background-color: $elements-hover-background-color;
+    }
+    @include screen-settings($tablet){
+
+    }
+  }
+
+  &__service-link{
+    @include default-settings-a;
+    flex-direction: column;
+  }
+
+  &__service-type{
+    @include font-settings(18px, 1.00, $main-text-color);
+  }
+
+  &__service-title{
+    @include font-settings(32px, 1.00, $headers-color);
+    margin-top: 20px;
+    @include screen-settings($mobile){
+      @include font-settings(24px, 1.33, $headers-color);
+      margin-top: 10px;
+    }
+  }
+
+  &__service-description{
+    @include font-settings(32px, 1.25, $main-text-color);
+    margin-top: 40px;
+    @include screen-settings($mobile){
+      @include font-settings(12px, 1.50, $main-text-color);
+      margin-top: 28px;
+    }
+  }
+
+  &__service-price{
+    @include font-settings(32px, 1.25, $highlights-background-color);
+    margin-top: 40px;
+    @include screen-settings($mobile){
+      @include font-settings(12px, 1.50, $highlights-background-color);
+      margin-top: 100px;
+    }
+  }
+}

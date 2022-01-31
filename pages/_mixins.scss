@@ -1,0 +1,48 @@
+/*Настройка шрифтов*/
+@mixin font-settings($size, $height, $color){
+  font-family: Roboto, Arial, "Times New Roman", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+}
+
+/*Настройка  ширины экрана*/
+@mixin screen-settings ($screen-width){
+  @media screen and (max-width: $screen-width){
+    @content;
+  }
+}
+
+/*Сброс стандартных настроек*/
+@mixin default-settings {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*Сброс стандартных настроек списков*/
+@mixin default-settings-ul {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
+@mixin default-settings-li{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+@mixin default-settings-a {
+  display: flex;
+  box-sizing: border-box;
+  text-decoration: none;
+}

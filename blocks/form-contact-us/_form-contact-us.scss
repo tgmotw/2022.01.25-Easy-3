@@ -1,0 +1,101 @@
+.form-contact-us{
+  @include default-settings;
+  margin-top: 230px;
+  width: 100%;
+  max-width: 569px;
+  @include screen-settings($tablet){
+    max-width: unset;
+    margin-top: 470px;
+  }
+  @include screen-settings($mobile){
+    max-width: unset;
+    margin-top: 260px;
+  }
+
+  &__group-of-elements {
+    @include default-settings;
+    display: flex;
+    align-items: center;
+    border: unset;
+    outline: unset;
+    width: 100%;
+  }
+
+  &__customer-information {
+      @include default-settings;
+      @include font-settings(14px, 1.71, $headers-color);
+      border: unset;
+      height: 50px;
+      width: 348px;
+      background-color: $inputs-passive-background-color;
+      border-radius: 8px 0 0 8px;
+      padding: 13px 16px;
+      @include screen-settings($tablet){
+      width: 100%;
+      }
+
+      &:hover {
+        border: unset;
+        cursor: $cursor;
+        background-color: $inputs-active-background-color;
+      }
+
+      &:focus {
+        border: unset;
+        outline: unset;
+        background-color: $inputs-active-background-color;
+      }
+
+      &:active {
+        border: unset;
+        outline: unset;
+        background-color: $inputs-active-background-color;
+      }
+  }
+
+  &__submit-button{
+    @include default-settings;
+    @include font-settings(14px, 1.71, $headers-color);
+    display: flex;
+    align-items: center;
+    border: unset;
+    border-radius: 0 8px 8px 0;
+    height: 50px;
+    width: 100%;
+    max-width: 221px;
+    padding: 13px 0 13px 16px;
+    background-color: $buttons-background-color;
+    cursor: $cursor;
+    @include screen-settings($mobile){
+      max-width: 51px;
+    }
+  }
+
+  &__submit-button-value{
+    @include font-settings(14px, 1.71, $headers-color);
+    display: block;
+    margin-right: 10px;
+    @include screen-settings($mobile){
+      display: none;
+    }
+  }
+
+  &__submit-button-emodzi{
+    display: block;
+    @include font-settings(14px, 1.71, $headers-color);
+  }
+
+  &__input-lable{
+    @include default-settings;
+    @include font-settings(12px, 1.50, $labels-color);
+    margin-top: 18px;
+    padding-left: 10px;
+  }
+
+  &_position_footer{
+    margin-top: 84px;
+    @include screen-settings($mobile){
+      margin-top: 184px;
+    }
+  }
+}

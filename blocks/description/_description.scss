@@ -1,0 +1,37 @@
+.description{
+  box-sizing: border-box;
+  width: 100%;
+  max-width: $desktop;
+  padding: 60px 160px;
+  background-color: $main-background-color;
+  @include screen-settings($tablet){
+    padding: 60px;
+  }
+  @include screen-settings($mobile){
+    padding: 40px 20px;
+  }
+
+  &__main-text{
+    @include default-settings;
+    @include font-settings(32px, 1.25, $main-text-color);
+    @include screen-settings($tablet){
+      @include font-settings(20px, 1.5, $main-text-color);
+    }
+    @include screen-settings($mobile){
+      @include font-settings(12px, 1.5, $main-text-color);
+    }
+  }
+
+  &__header{
+    @include default-settings;
+    margin-top: 60px;
+    @include font-settings(32px, 1.25, $headers-color);
+    @include screen-settings($tablet){
+      @include font-settings(20px, 1.5, $headers-color);
+    }
+    @include screen-settings($mobile){
+      @include font-settings(12px, 1.5, $headers-color);
+      margin-top: 20px;
+    }
+  }
+}

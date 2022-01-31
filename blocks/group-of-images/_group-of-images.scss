@@ -1,0 +1,92 @@
+.group-of-images {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 60px 30px 60px 30px;
+  @include screen-settings($tablet) {
+    padding: 20px 60px 20px 60px;
+  }
+  @include screen-settings($mobile) {
+    padding: 20px;
+  }
+
+  &__upper-group {
+    display: flex;
+    width: 100%;
+    @include screen-settings($mobile) {
+      flex-direction: column;
+    }
+  }
+
+  &__upper-group-photo-container {
+    width: 100%;
+    max-width: 448px;
+    margin-right: 20px;
+    @include screen-settings($mobile){
+      margin-right: 0;
+      max-width: 100%;
+    }
+  }
+
+  &__upper-group-photo {
+    @include default-settings;
+    display: block;
+    border-radius: $images-border-radius;
+    width: 100%;
+    max-width: 448px;
+    height: auto;
+    @include screen-settings($mobile){
+      max-width: 100%;
+    }
+  }
+
+  &__upper-group-colored-rectangle {
+    width: 100%;
+    background-color: #ffd233;
+    border-radius: $images-border-radius;
+    @include screen-settings($mobile) {
+      height: 67px;
+      margin-top: 20px;
+    }
+  }
+
+  &__lower-group {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    @include screen-settings($mobile) {
+      flex-direction: column;
+      margin-top: 20px;
+    }
+  }
+
+  &__lower-group-colored-rectangle {
+    width: 100%;
+    margin-right: 20px;
+    background-color: $highlights-background-color;
+    border-radius: $images-border-radius;
+    @include screen-settings($tablet) {
+      width: 173px;
+    }
+    @include screen-settings($mobile){
+      margin-right: 0;
+      height: 124px;
+      width: 100%;
+    }
+  }
+
+  &__lower-group-photo-container {
+    width: 100%;
+    @include screen-settings($mobile){
+      margin-top: 20px;
+    }
+  }
+
+  &__lower-group-photo {
+    @include default-settings;
+    display: block;
+    width: 100%;
+    max-width: 730px;
+    height: auto;
+    border-radius: $images-border-radius;
+  }
+}
